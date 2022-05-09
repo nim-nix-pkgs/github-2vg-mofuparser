@@ -6,7 +6,7 @@
   "tags": [],
   "url": "https://github.com/2vg/mofuparser",
   "refs": [
-    "fatal: unable to access 'https://github.com/2vg/mofuparser/': Could not resolve host: github.com",
+    "fatal: unable to access 'https://github.com/2vg/mofuparser/': Failed to connect to github.com port 443 after 131525 ms: Network is unreachable",
     ""
   ],
   "heads": []
