@@ -7,6 +7,14 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
+  inputs."mofuparser-master".dir   = "master";
+  inputs."mofuparser-master".owner = "nim-nix-pkgs";
+  inputs."mofuparser-master".ref   = "master";
+  inputs."mofuparser-master".repo  = "mofuparser";
+  inputs."mofuparser-master".type  = "github";
+  inputs."mofuparser-master".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."mofuparser-master".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@inputs:
   let 
     lib  = flakeNimbleLib.lib;
